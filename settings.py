@@ -25,7 +25,10 @@ SECRET_KEY = 'django-insecure-yc4l%mv7+sx3h-_a503o8ety)b*uhjy!6s)ytpk0024xejvra7
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['unsocial-media.onrender.com', '127.0.0.1', 'localhost']
+# ALLOWED_HOSTS = ['unsocial-media.onrender.com', '127.0.0.1', 'localhost']
+import os
+
+ALLOWED_HOSTS = os.getenv('ALLOWED_HOSTS', 'unsocial-media.onrender.com').split(',')
 
 
 # Application definition
