@@ -26,6 +26,7 @@ SECRET_KEY = 'django-insecure-yc4l%mv7+sx3h-_a503o8ety)b*uhjy!6s)ytpk0024xejvra7
 DEBUG = True
 
 ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['unsocial-media.onrender.com', '13.228.225.19', 'localhost']
 
 
 # Application definition
